@@ -74,7 +74,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
 			return true;
 		}
 
-		$fixFileName = 'pre-commit-phpcsfixer-20';
+		$fixFileName = 'pre-commit-phpcsfixer-10';
 		if (file_exists($hookDir . $fixFileName)) {
 			return true;
 		}
