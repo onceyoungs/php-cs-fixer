@@ -1,0 +1,28 @@
+{
+	"name": "onceyoungs/php-cs-fixer",
+	"description": "git pre submit hook, automatically formats code plugins.",
+	"type": "composer-plugin",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "onceyoungs",
+			"email": "onceyoungs@163.com"
+		}
+	],
+	"require": {
+		"php": "^5.6 || ^7.0 || ^8.0",
+		"composer-plugin-api": "*",
+		"friendsofphp/php-cs-fixer": "^2.15"
+	},
+	"require-dev": {
+		"composer/composer": "~1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Onceyoungs\\PhpCsFixer\\": "src/"
+		}
+	},
+	"extra": {
+		"class": "Onceyoungs\\PhpCsFixer\\Plugin\\Plugin"
+	}
+}
